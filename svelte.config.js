@@ -6,10 +6,9 @@ const config = {
 	// Consult https://github.com/sveltejs/svelte-preprocess
 	// for more information about preprocessors
 	preprocess: preprocess(),
-
 	kit: {
 		paths: {
-			base: '/ttt.space'
+			base: '/ttt.space',
 		},
 		target: '#main',
 		adapter: adapter({

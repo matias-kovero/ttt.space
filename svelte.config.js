@@ -8,7 +8,9 @@ const config = {
 	preprocess: preprocess(),
 
 	kit: {
-		// hydrate the <div id="svelte"> element in src/app.html
+		paths: {
+			base: '/ttt.space'
+		},
 		target: '#main',
 		adapter: adapter({
 			pages: 'docs',

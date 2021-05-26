@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="/favicon.ico" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<title>Todos</title><link rel="preconnect" href="https://fonts.gstatic.com" data-svelte="svelte-12g5ox6"><link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet" data-svelte="svelte-12g5ox6"><link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&display=swap" rel="stylesheet" data-svelte="svelte-12g5ox6">
+
+		
+
+		<link rel="modulepreload" href="/./_app/start-08751ce7.js">
+		<link rel="modulepreload" href="/./_app/chunks/vendor-70e35ac7.js">
+		<link rel="modulepreload" href="/./_app/pages/__layout.svelte-51a37072.js">
+		<link rel="modulepreload" href="/./_app/pages/todos/index.svelte-c5dfd830.js">
+		<link rel="stylesheet" href="/./_app/assets/start-a8cd1609.css">
+		<link rel="stylesheet" href="/./_app/assets/vendor-95488995.css">
+		<link rel="stylesheet" href="/./_app/assets/pages/__layout.svelte-a3a5876f.css">
+		<link rel="stylesheet" href="/./_app/assets/pages/todos/index.svelte-ef0435f2.css">
+
+		<script type="module">
+			import { start } from "/./_app/start-08751ce7.js";
+			start({
+				target: document.querySelector("#main"),
+				paths: {"base":"","assets":"/."},
+				session: {},
+				host: location.host,
+				route: true,
+				spa: false,
+				trailing_slash: "never",
+				hydrate: {
+					status: 200,
+					error: null,
+					nodes: [
+						import("/./_app/pages/__layout.svelte-51a37072.js"),
+						import("/./_app/pages/todos/index.svelte-c5dfd830.js")
+					],
+					page: {
+						host: location.host, // TODO this is redundant
+						path: "/todos",
+						query: new URLSearchParams(""),
+						params: {}
+					}
+				}
+			});
+		</script>
+	</head>
+	<body>
+		<div id="main">
+
+
+
+
+<header class="svelte-w7cr2d"><div class="corner svelte-w7cr2d"><a href="https://matiaskovero.com" class="svelte-w7cr2d"><img class="logo svelte-w7cr2d" src="/_app/assets/mk-logo.9d3544cd.svg" alt="MK"></a></div>
+
+	<div class="corner svelte-w7cr2d">
+<a id="hipsydibsy-button" href="javascript:void(0)" title="Press 1" class="svelte-w7cr2d">HipsyDipsy</a></div>
+</header>
+
+
+<div class="canvas-backdrop svelte-1f4s8gb">
+  <canvas style="width: 400px; height: 200px; z-index: -9000;" width="800" height="400" class="svelte-o3oskp"></canvas>
+
+      
+	
+      
+  
+  <canvas style="width: 400px; height: 200px; position: absolute; top: 0; z-index: 100;" width="800" height="400" class="svelte-o3oskp"></canvas>
+
+      
+</div>
+
+<main class="svelte-nxfohg">
+
+<div class="todos svelte-dmxqmd"><h1>Todos</h1>
+
+	<form class="new svelte-dmxqmd" action="/todos.json" method="post"><input name="text" aria-label="Add todo" placeholder="+ tap to add a todo" class="svelte-dmxqmd"></form>
+
+	
+</div></main>
+
+<footer class="footer svelte-cgc3n5"><h1 class="main-text svelte-cgc3n5">You&#39;ve been subsiding for <span class="counter-value svelte-9a94gg">0.00</span> seconds.</h1>
+  <h3 class="svelte-cgc3n5">Playing nothing, yet</h3>
+  <h3 class="svelte-cgc3n5">Click anywhere on the screen to start playing music.</h3>
+</footer>
+
+
+
+	<script type="svelte-data" url="/todos.json">{"status":200,"statusText":"","headers":{"content-type":"application/json"},"body":"[]"}</script>
+</div>
+	</body>
+</html>
